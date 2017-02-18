@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %} {# recuerda que "content" es simplemente una variable, se podria llamar como se te antoje #}
+
+  
+  <ul>
+    {% for runsthroughindexes in listavariable %}
+      <li>
+        {{ runsthroughindexes['nombre'] }}: {{ runsthroughindexes['apodo']}}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if listavariables | length > 10 %}
+    el grupo siii se va a abrir...
+  {% else %}
+    son muy pocos para abrir el curso, nimo'o
+  {% endif %}
+
+{% endblock %}

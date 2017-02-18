@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %} {# recuerda que "content" es simplemente una variable, se podria llamar como se te antoje #}
+
+  <ul>
+      {% if variable_apodo %}
+        para el apodo suministrado,
+        el nombre completo es: {{ variable_apodo['nombre']}}
+        la bioografia (bio) es....
+      {% else %}
+        para el apodo suministrado, no existe alumno registrado...
+      {% endif %}
+  </ul>
+
+{% endblock %}

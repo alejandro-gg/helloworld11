@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+{# note that this template home4.html actually is linked to two pages...  /home4 and /home4b, cheers #}
+    <h1>
+      Esta es una minipagina bio de {{ nombre }}
+    </h1>
+    <h2>
+      y esta es la historia: {{ bio }}
+    </h2>
+    la ultima fecha <br> de actualizcion fue:  {{ fecha }}
+{% endblock %}
